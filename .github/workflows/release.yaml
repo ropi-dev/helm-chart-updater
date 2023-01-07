@@ -29,8 +29,8 @@ jobs:
         env:
           VERSION: ${{ github.ref_name }}
         name: Build
-        run: npm pack
+        run: npm run pack
       - uses: softprops/action-gh-release@v1
         name: Release
         with:
-          files: "*.tgz"
+          files: "*.zip"
