@@ -10,7 +10,7 @@ const generateJwt = (appId, secret) => {
 }
 
 exports.main = (req, res) => {
-
+    res.status(204)
 }
 
 exports.generateJwt = generateJwt
