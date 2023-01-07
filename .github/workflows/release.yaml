@@ -20,6 +20,9 @@ jobs:
         with:
           node-version: "v18.13.0"
       - shell: bash
+        name: Install
+        run: npm install
+      - shell: bash
         name: Test
         run: npm test
       - shell: bash
