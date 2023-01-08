@@ -24,7 +24,7 @@ jobs:
         run: npm install
       - shell: bash
         name: Test
-        run: npm test
+        run: NODE_OPTIONS=--experimental-vm-modules npm test
       - shell: bash
         env:
           VERSION: ${{ github.ref_name }}
